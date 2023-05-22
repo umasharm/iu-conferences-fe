@@ -188,7 +188,7 @@ function App() {
       
 
       <button onClick={scheduleMeeting}>Schedule Meeting</button> &nbsp;  
-      <a href="https://github.iu.edu/Indiana-University-Conferences/zoom/blob/main/Sample_excel.xlsx"><button>Download Sample File</button></a>  &nbsp;
+      <a href="https://github.com/umasharm/iu-conferences-fe/blob/main/Webinar_test.xlsx"><button>Download Sample File</button></a>  &nbsp;
   
       <button onClick={deleteMeeting}> Delete Meeting</button>     &nbsp;  
       {/* <button onClick={updateMeeting}>Update Existing Meeting</button>  &nbsp;   */}
