@@ -125,7 +125,7 @@ function App() {
   }
 
   const downloadFile = () => {
-    window.open("https://iuc-website-abstracts-fall-pts-2022.s3.us-east-2.amazonaws.com/FirstStepsINPUTTEST.xlsx", '_blank').focus() 
+    window.open("https://github.com/umasharm/iu-conferences-fe/blob/main/Webinar_test.xlsx", '_blank').focus() 
   } 
 
   const deleteMeeting=()=>{
