@@ -42,7 +42,7 @@ function App() {
     formData.append("token", token);
     formData.append("input_excel", selectedFile);
 
-    axios.post("http://localhost:5002/preprocess_zoom_excel", formData, {responseType: 'arraybuffer'})
+    axios.post("https://zoom-be.herokuapp.com/preprocess_zoom_excel", formData, {responseType: 'arraybuffer'})
     .then((response) => {
       alert("File Upload Success");
       console.log(response);
@@ -63,7 +63,7 @@ function App() {
     formData.append("topic", webtheme);
     formData.append("input_excel", selectedWebFile);
 
-    axios.post("http://localhost:5002/schedule_webinar", formData, {responseType: 'arraybuffer'})
+    axios.post("https://zoom-be.herokuapp.com/schedule_webinar", formData, {responseType: 'arraybuffer'})
     .then((response) => {
       alert("File Upload Success");
       console.log(response);
@@ -85,7 +85,7 @@ function App() {
     formData.append("webID", webId);
     formData.append("input_excel", webExcelFile);
 
-    axios.post("https://iu-conferences.herokuapp.com/flask/hello", formData, {responseType: 'arraybuffer'})
+    axios.post("https://zoom-be.herokuapp.com/schedule_webinar_using_id", formData, {responseType: 'arraybuffer'})
     .then((response) => {
       alert("File Upload Success");
       console.log(response);
@@ -110,7 +110,7 @@ function App() {
     //formData.append("id", id);
     formData.append("id", id);
     formData.append("input_excel", selectedDeleteFile);
-    axios.post("http://localhost:5002/delete_meeting", formData)
+    axios.post("https://zoom-be.herokuapp.com/delete_meeting", formData)
     .then((response) => {
       console.log("res=",response.data.success)
       if (response.data.success == true){
